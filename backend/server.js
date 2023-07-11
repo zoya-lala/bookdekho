@@ -23,6 +23,7 @@ app.get('/', (req, res) => {
 app.use('/api/books', bookRoutes);
 app.use('/api/users', userRoutes);
 
+const dirname = path.resolve();
 if (process.env.NODE_ENV === 'development') {
 	app.use(express.static(path.join(dirname, '/frontend/build')));
 
