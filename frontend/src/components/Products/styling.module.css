@@ -1,0 +1,24 @@
+.body {
+    box-sizing: border-box !important;
+}
+
+.List {
+    border: 0px solid blue;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    align-items: center;
+    column-gap: 50px;
+    row-gap: 25px;
+    width: fit-content;
+    height: fit-content;
+    padding: 25px 25px;
+    position: relative;
+}
+
+@media screen and (max-width:1300px) {
+    .List {
+        grid-template-columns: auto auto auto;   
+    }
+}

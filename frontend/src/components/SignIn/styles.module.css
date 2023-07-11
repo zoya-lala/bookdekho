@@ -1,0 +1,169 @@
+.LoginPage {
+	background: linear-gradient(270deg, #ffeaa7 0%, #c0d7fe 80%);
+	border: 0px solid red;
+	position: fixed;
+	inset: 0;
+	top: 115px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.LoginPage .Container {
+	border: 0px solid red;
+	height: 100%;
+	max-width: 700px;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 30px;
+}
+
+.LoginPage .Container .Island {
+	height: 650px;
+	width: 100%;
+	max-width: 440px;
+	background: #ffffff;
+	box-shadow: -5px 5px 15px rgba(0, 0, 0, 0.3);
+	padding: 10px 15px;
+	box-sizing: border-box;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.LoginPage .HeroIllustration {
+	height: 100%;
+	width: 100%;
+	border: 0px solid red;
+	box-sizing: border-box;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.LoginPage .HeroIllustration img {
+	width: 100%;
+	max-width: 950px;
+	position: relative;
+	left: 5%;
+}
+
+.LoginPage .Container .Island .AccountImg {
+	height: 100px;
+	margin-top: 55px;
+}
+
+.LoginPage .Container .Island h1 {
+	margin-top: 35px;
+	font-size: 26px;
+	margin-bottom: 50px;
+}
+
+.LoginPage .Container .Island .SlidableBox {
+	border: 0px solid red;
+	height: 350px;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.LoginPage .Container .Island .SlidableBox .Pages {
+	height: 100%;
+	width: 100%;
+	border: 0px solid blue;
+	box-sizing: border-box;
+	padding: 20px;
+	position: absolute;
+	top: 0;
+	transition: 0.3s ease;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page1 {
+	transform: translateX(0%);
+}
+
+.LoginPage .Container .Island .SlidableBox .Page1Inactive {
+	transform: translateX(-105%) !important;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page2 {
+	transform: translateX(105%);
+}
+
+.LoginPage .Container .Island .SlidableBox .Page2Active {
+	transform: translateX(0%) !important;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page1 .TextBox div {
+	border: 0px solid red;
+	width: 100%;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page2 .TextBox {
+	border: 0px solid red;
+	width: 100%;
+	display: flex;
+	grid-column-gap: 20px;
+	margin-top: 20px;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page2 .TextBox input {
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page1 .Footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	border-top: 1px solid rgba(0, 0, 0, 0.12);
+	padding: 10px 20px;
+	padding-top: 10px;
+}
+
+.LoginPage .Container .Island .SlidableBox .Page1 .Footer p {
+	font-size: 16px;
+}
+
+.LoginPage .Container .Island .SlidableBox .Pages .Button {
+	margin-top: 50px;
+	border: 0px solid red;
+	display: flex;
+	justify-content: center;
+}
+
+@media screen and (max-width: 1000px) {
+	.LoginPage {
+		flex-direction: column;
+		justify-content: flex-start;
+		overflow-x: hidden;
+		background: linear-gradient(0deg, #ffeaa7 0%, #c0d7fe 80%);
+	}
+
+	.HeroIllustration {
+		max-height: 250px;
+	}
+
+	.HeroIllustration img {
+		width: auto;
+		height: 100%;
+		min-height: 500px;
+		left: 0% !important;
+		top: -5%;
+	}
+
+	.Container {
+		padding: 10px 10px !important;
+	}
+}
+
+@media screen and (max-width: 650px) {
+	.LoginPage {
+		top: 180px;
+	}
+}

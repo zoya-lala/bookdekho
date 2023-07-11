@@ -1,0 +1,202 @@
+.AppBarr {
+	border: 0px solid red;
+	background-color: rgb(255, 255, 255);
+	height: 65px;
+	width: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	z-index: 10 !important;
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+	/* box-shadow: 1px 4px 5px rgba(0,0,0,0.3); */
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.AppBarr .Logo {
+	justify-self: flex-start;
+	border: 0px solid red;
+	margin-left: 20px;
+	cursor: pointer;
+	position: relative;
+	z-index: 5;
+}
+
+.AppBarr .Logo img {
+	border: 0px solid black;
+	height: 39px;
+}
+
+.AppBarr .SearchBarContainer {
+	border: 0px solid red;
+	position: absolute;
+	left: 0;
+	right: 0;
+	padding: 0px 250px;
+	display: flex;
+	justify-content: center;
+}
+
+.AppBarr .SearchBar {
+	border: 0px solid red;
+	border: 1px solid #c3c3c3;
+	border-radius: 4px;
+	background-color: #f7f7f7;
+	height: 50px;
+	width: 100%;
+	min-width: 150px;
+	max-width: 550px;
+	position: relative;
+	box-sizing: border-box;
+}
+
+.AppBarr .SearchBar div {
+	background: transparent !important;
+	border: 0px solid red;
+	height: 100%;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.AppBarr .SearchBar button {
+	position: absolute;
+	top: 2px;
+	right: 0px;
+	background-color: #ffffff !important;
+	z-index: 1;
+	border: 0px solid red;
+}
+
+.AppBarr .NavButtons {
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+	column-gap: 15px;
+	padding: 0px 15px;
+	border: 0px solid red;
+}
+
+.NavButtons button:nth-of-type(2) {
+	transform: scale(0.85) translateY(-2px);
+}
+
+.NotificationPanel {
+	border: 1px solid red;
+	position: fixed;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 11 !important;
+}
+
+.NotificationPanel .FillerBG {
+	border: 1px solid rgb(15, 4, 4);
+	position: fixed;
+	inset: 0;
+	height: 100%;
+	width: 100%;
+}
+
+.NotificationPanel .FillerBG::after {
+	content: '';
+	position: fixed;
+	inset: 0;
+	top: 65px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+.NotificationPanel .Pointed {
+	border: 0px solid red;
+	height: 18px;
+	width: 18px;
+	position: absolute;
+	top: -7.5px;
+	right: 12px;
+	transform: scaleX(0.85);
+}
+
+.NotificationPanel .Pointed::after {
+	content: '';
+	height: 15px;
+	width: 15px;
+	background-color: #ffffff;
+	position: absolute;
+	inset: 0;
+	transform: rotate(45deg);
+}
+
+.NotificationPanel .Notification {
+	border: 0px solid red;
+	position: fixed;
+	height: 300px;
+	width: 350px;
+	top: 80px;
+	background-color: #ffffff;
+	right: 0;
+	margin-right: 20px;
+	padding: 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+}
+
+.NotificationPanel .Heading {
+	border: 0px solid red;
+	font-size: large;
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+.NotificationPanel .Content {
+	margin-top: 5px;
+}
+
+.NotificationPanel .Clear {
+	/* border: 0px solid #1976D2; */
+	width: 330px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	bottom: 0;
+	/* margin-bottom: 5px; */
+	border-top: 1px solid #c3c3c3;
+}
+
+/* Media query For mobile only */
+@media screen and (max-width: 650px) {
+	.AppBar {
+		height: 130px;
+		align-items: flex-start;
+		padding-top: 10px;
+	}
+
+	.SearchBarContainer {
+		top: 65px;
+		padding: 0px 15px !important;
+	}
+
+	.NavButtons {
+		position: relative;
+		top: 10px;
+	}
+
+	.NavButtons button:nth-of-type(2) {
+		transform: scale(1.05);
+		position: fixed;
+		bottom: 30px;
+		right: 30px;
+	}
+
+	.Logo {
+		margin-left: 43px !important;
+	}
+
+	.Logo img {
+		height: 37px !important;
+		margin-top: 3px;
+	}
+}

@@ -1,0 +1,46 @@
+.ChatsPage {
+    border: 0px solid red;
+    background: plum;
+    position: fixed;
+    inset: 0;
+    top:119px;
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    /* flex-direction: row; */
+}
+
+.ChatsPage .ChatsHistory {
+    /* position: absolute; */
+    width: 600px;
+    height: 100%;
+    border: 0px solid black;
+    display: inline-flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+.ChatsPage .RightContainer {
+    border: 1px solid brown;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.ChatsPage .RightContainer .Image {
+    border: 0px solid black;
+    position: relative;
+}
+
+.ChatsPage .RightContainer .Image img {
+    height: 400px;
+}
+
+.ChatsPage .RightContainer .Text {
+    position: absolute;
+    top: 460px;
+    left: 955px;
+    border: 0px solid green;
+}

@@ -1,0 +1,54 @@
+.SecondBar {
+    position: fixed;
+    border: 0px solid red;
+    top: 66px;
+    left: 0;
+    right: 0;
+    z-index: 9 !important;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    column-gap: 25px;
+    background-color: rgb(210, 235, 254);
+    color: #222222 !important;
+    box-shadow: 1px 4px 5px rgba(0,0,0,0.1);
+}
+
+/* .SecondBar div {
+    border: 1px solid blue;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    height: 25.6px;
+} */
+
+.SecondBar .CategoryBtn {
+        display: inline-flex;
+        column-gap: 15px;
+}
+
+.SecondBar button {
+    color: #00154b;
+    font-weight: bold;
+}
+
+.DTitle {
+    border: 0px solid red;
+    width: 100%;
+    height: 60px;
+    padding-top: 20px;
+    padding-left: 10px;
+    position: absolute;
+    box-sizing: border-box;
+    margin-top: 0px;
+    background-color: #c3c3c3;
+}
+
+.CatAccordian {
+    position: absolute;
+    top: 150px;
+    border: 1px solid seagreen;
+}

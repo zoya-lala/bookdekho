@@ -1,0 +1,71 @@
+.ColumnProduct {
+	border: 1px solid #dedede;
+	border-radius: 8px;
+	overflow: hidden;
+	position: relative;
+	width: 250px;
+	box-sizing: border-box;
+	box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.3);
+	transform: translateY(0px);
+	transition: transform 0.2s ease;
+	cursor: pointer;
+}
+
+.ColumnProduct:hover {
+	transform: translateY(-7px);
+}
+
+.ColumnProduct .Image {
+	background-color: #000000;
+	border: 0px solid blue;
+	height: 280px;
+	width: 250px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	pointer-events: none;
+}
+
+.ColumnProduct .Image img {
+	width: 100%;
+}
+
+.ColumnProduct .BookDetails {
+	background-color: #ffffff;
+	border: 0px solid green;
+	padding: 5px 20px;
+}
+
+.ColumnProduct .BookDetails h1 {
+	font-size: 18px !important;
+	color: #000000;
+	margin-bottom: 5px;
+}
+
+.ColumnProduct .BookDetails .by {
+	margin-bottom: 15px;
+}
+
+.ColumnProduct .BookDetails .price {
+	border: 0px solid red;
+	display: flex;
+	column-gap: 5px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+}
+
+.ColumnProduct .BookDetails .price h4 {
+	font-size: 16px !important;
+	text-decoration: line-through;
+	margin: 0 !important;
+}
+
+.ColumnProduct .BookDetails .price h3 {
+	background-color: rgba(255, 212, 212, 0.5);
+	padding: 5px 20px;
+	border-radius: 50px;
+	font-size: 22px;
+	color: rgb(227, 53, 53);
+	margin: 0 !important;
+}

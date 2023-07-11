@@ -1,0 +1,18 @@
+*{
+    font-family: Roboto;
+}
+
+.App {
+    border: 0px solid blue;
+    position: fixed;
+    inset: 0;
+    padding-top: 115px;
+    box-sizing: border-box !important;
+}
+
+.App .ScrollableContainer {
+    height: 100%;
+    width: 100%;
+    border: 1px solid red;
+    overflow-x: hidden !important;
+}

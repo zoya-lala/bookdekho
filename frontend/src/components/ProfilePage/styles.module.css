@@ -1,0 +1,111 @@
+body {
+    box-sizing: border-box !important;
+}
+
+.ProfilePage {
+    box-sizing: border-box;
+    border: 0px solid red;
+    min-height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ProfilePage .Image {
+    width: 100%;
+    /* margin-bottom: 50px; */
+
+}
+
+.ProfilePage .Image img {
+    width: 100%;
+}
+
+.ProfilePage .FormCard {
+    border: 0px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    /* border-radius: 10px; */
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    box-shadow: 3px 5px 8px rgba(0, 0, 0, 0.3);
+    align-items: center;
+}
+
+.ProfilePage .FormCard .FormHeader {
+    border-bottom: 1px solid #c3c3c3;
+    height: 60px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.397);
+    padding-left: 40px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: bold;
+    color: #000000;
+    font-size: medium;
+}
+
+.ProfilePage .FormCard .FormBody {
+    box-sizing: border-box !important;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: 100%;
+    border: 0px solid brown;
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.ProfilePage .FormCard .FormBody .EnrollNum {
+    border: 0px solid red;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.ProfilePage .FormCard .FormBody .Name {
+    border: 0px solid red;
+    display: inline-flex;
+    align-items: center;
+}
+
+.ProfilePage .FormCard .FormBody .Email {
+    border: 0px solid red;
+    display: inline-flex;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.ProfilePage .FormCard .FormBody .Phone {
+    border: 0px solid red;
+    display: inline-flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.ProfilePage .FormCard .FormBody .BranchSem {
+    border: 0px solid red;
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+
+.ProfilePage .FormCard .FormBody .BranchSem .Semester {
+    margin-left: 15px;
+}
+
+.ProfilePage .FormCard .FormBody .Department {
+    margin-top: 20px;
+}
+
+.ProfilePage .FormCard .FormBody .Save {
+    margin-top: 8px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+}
+

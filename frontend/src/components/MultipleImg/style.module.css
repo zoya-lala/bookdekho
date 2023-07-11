@@ -1,0 +1,15 @@
+.Upload {
+	border: 1px solid red;
+	height: 150px;
+	display: flex;
+	column-gap: 10px;
+	padding-top: 10px;
+}
+
+.Upload img {
+	height: 100px;
+}
+
+.Store {
+	height: 110px;
+}

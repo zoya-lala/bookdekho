@@ -1,0 +1,172 @@
+.DonateBooks {
+	border: 0px solid red;
+	box-sizing: border-box;
+	width: 100%;
+	min-height: 100%;
+	display: flex;
+	justify-content: center;
+	background-image: linear-gradient(#1c92d2, #9decfc);
+}
+
+.DonateBooks .Form {
+	border: 0px solid rgb(14, 12, 12);
+	background-color: #ffffff;
+	margin: 10px;
+	margin-bottom: 10px;
+	min-height: 80%;
+	width: 600px;
+	padding-bottom: 5px;
+	border-radius: 10px;
+}
+
+.DonateBooks .Form .Header {
+	border: 0px solid red;
+	height: 48px;
+	/* background-color: #1976D2; */
+	color: #000000;
+	/* padding: 10px; */
+}
+
+.Checkbox {
+	border: 0px solid red;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* color: #1c92d2; */
+}
+
+.BookName {
+	border: 0px solid red;
+	/* padding-top: 10px; */
+	padding-left: 10px;
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+
+.BookCondition {
+	border: 0px solid red;
+	padding-left: 10px;
+	margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.Author {
+	border: 0px solid red;
+	padding-left: 10px;
+	margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.Year {
+	border: 0px solid red;
+	padding-left: 10px;
+	margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.Price {
+	border: 0px solid red;
+	padding-left: 10px;
+	margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.Price1 {
+	border: 0px solid red;
+	padding-left: 10px;
+	margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+}
+
+.Language {
+	border: 0px solid red;
+	padding-left: 10px;
+	margin-top: 15px;
+	display: inline-flex;
+	align-items: center;
+	width: 100%;
+}
+
+.SecondTab {
+	border: 0px solid red;
+}
+
+.Upload {
+	border: 1px solid rgb(98, 0, 255);
+	width: 100%;
+	height: 200px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	row-gap: 40px;
+	padding-top: 15px;
+	margin-top: 10px;
+}
+
+.Upload label {
+	background-color: #1976d2;
+	color: white;
+	padding: 0.5rem;
+	font-family: sans-serif;
+	border-radius: 0.3rem;
+	cursor: pointer;
+	margin-top: 1rem;
+	/* position: fixed; */
+	/* top: 380px; */
+}
+
+/* .Upload div {
+	background-color: #ffffff;
+	border: 4px solid red;
+	border-radius: 15px;
+	overflow: hidden;
+	height: 100px;
+	width: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 10px;
+} */
+
+.Upload .Structure {
+	display: flex;
+	column-gap: 10px;
+	height: 100px;
+	border: 0px solid rgb(14, 12, 12);
+}
+
+.Upload .Store {
+	border: 0px solid red;
+	/* display: flex;
+	/* flex-direction: column; */
+	/* column-gap: 5px; */
+}
+
+.Upload .Store img {
+	height: 110px;
+	width: 100px;
+	margin-top: 0px !important;
+	animation: 0.3s dp ease forwards 0s;
+}
+
+@keyframes dp {
+	100% {
+		height: 110px;
+	}
+}
+
+.Description {
+	border: 0px solid red;
+	margin-top: 20px;
+}
+
+.Submit {
+	border: 0px solid red;
+	margin-top: 20px;
+}
